@@ -2,12 +2,12 @@ const router = require("express").Router();
 const { filterByQuery, createNewNoteText, validateNoteText, } = require("../lib/api.js");
 const { noteText } = require("../db/db.json");
 
-router.get("/", (req, res) => {
-  let results = db.json;
+router.get("/notes", (req, res) => {
+  let results = js;
   if (req.query) {
     results = filterByQuery(req.query, results);
   }
-  res.json(db.json);
+  res.json(results);
 });
 
 
