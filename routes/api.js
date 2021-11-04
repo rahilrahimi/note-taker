@@ -1,26 +1,25 @@
 const router = require("express").Router();
-const { text } = require("express");
-const { filterByQuery, createNewText, validateText, } = require("../../lib/text");
-const { text } = require("./db/db.json");
+const { filterByQuery, createNewNoteText, validateNoteText, } = require("../lib/api.js");
+const { noteText } = require("../db/db.json");
 
-router.get("/text", (req, res) => {
-  let results = text;
+router.get("/", (req, res) => {
+  let results = db.json;
   if (req.query) {
     results = filterByQuery(req.query, results);
   }
-  res.json(results);
+  res.json(db.json);
 });
 
 
-router.post("/text", (req, res) => {
-  req.body = text.length.toString();
+router.post("./js/index.js", (req, res) => {
+  req.body = noteText.length.toString();
 
   // if any data in req.body is incorrect, send 400 error back
-  if (!validateText(req.body)) {
-    res.status(400).send("The text is not properly formatted.");
+  if (!validatenoteText(req.body)) {
+    res.status(400).send("The noteText is not properly formatted.");
   } else {
-    const text = createNewText(req.body, text);
-    res.json(text);
+    const noteText = createNewnoteText(req.body, noteText);
+    res.json(index.js);
   }
 });
 
