@@ -15,18 +15,20 @@ router.get("/notes", (req, res) => {
 
 
 router.post("/notes", (req, res) => {
-  console.log("you hit POST /api/notes")
   console.log(req.body)
 const input = req.body;
-  let oldNote =JSON.parse(fs.readFileSync(path.join(__dirname,"../db/db.json"),"utf-8")) 
-  oldNote.push(newNote)
-  fs.writeFileSync("./db/db.json",JSON.stringify(oldNote))
-  res.json(oldNote)
+  dbData.push(input)
+res.json(dbData)
 
   //2. ADD to the db.json array
+  router.deleteNote("/notes/:id", (req, res) => {
+    const deleteNote = id
+    // fs.writeFileSync("./db/db.json",JSON.stringify(dbData))
+    res.send(this.delete)
+})
 
   //3. WRITE back into db.json
-
+  
   //4. res.json() (send something back up to frontend!)
 
 });
