@@ -42,3 +42,6 @@ https://watch.screencastify.com/v/u0EqYUnVNyGqkYFgaQTx
 
 ## Link to live application on herok
 https://limitless-springs-96404.herokuapp.com/
+
+## Deployed Link
+https://rahilrahimi.github.io/note-taker/
