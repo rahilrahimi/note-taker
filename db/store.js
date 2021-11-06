@@ -1,6 +1,6 @@
 const fs = require('fs');
 const util = require('util');
-const uuid = require('uuid');
+const {v1:uuidv1} = require('uuid');
 
 const readFile = util.promisify(fs.readFile);
 const writeFile = util.promisify(fs.writeFile);
@@ -31,16 +31,12 @@ class Store {
     postNote(note) {
         const { title, body } = note;
 
-        // if (!title || !body) {
-        //     throw new Error('title & body can not be blanck');
-        // }
-
-        const newNote = { title, body, id: uuid() }
+        const newNote = { title, body, id: uuidv1() }
 
         return this.getNotes()
-            .then(notes => [...notes, newNote])
-            .then(updateNote => this.write(updateNote))
-            .then(() => newNote)
+        .then((notes) => [...notes, newNote])
+        .then((updatedNotes) => this.write(updatedNotes))
+        .then(() => newNote);
 
 
     }
