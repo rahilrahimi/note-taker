@@ -1,3 +1,4 @@
+const { text } = require('express');
 const fs = require('fs');
 const util = require('util');
 const {v1:uuidv1} = require('uuid');
@@ -30,7 +31,7 @@ class Store {
 
     postNote(note) {
         const { title, body } = note;
-
+console.log(note, title, text);
         const newNote = { title, body, id: uuidv1() }
 
         return this.getNotes()
