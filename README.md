@@ -37,11 +37,8 @@ THEN I am presented with empty fields to enter a new note title
 
 ## Mock-Up Demo
 https://watch.screencastify.com/v/Z9bLmP9J7FakEoDaRj5n
-
-https://watch.screencastify.com/v/u0EqYUnVNyGqkYFgaQTx
+https://watch.screencastify.com/v/Udr52LPH1t2FN4Vk8Cb6
 
 ## Link to live application on herok
 https://limitless-springs-96404.herokuapp.com/
 
-## Deployed Link
-https://rahilrahimi.github.io/note-taker/
