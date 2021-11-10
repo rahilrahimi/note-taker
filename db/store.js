@@ -30,9 +30,9 @@ class Store {
     }
 
     postNote(note) {
-        const { title, body } = note;
+        const { title, text } = note;
 console.log(note, title, text);
-        const newNote = { title, body, id: uuidv1() }
+        const newNote = { title, text, id: uuidv1() }
 
         return this.getNotes()
         .then((notes) => [...notes, newNote])
