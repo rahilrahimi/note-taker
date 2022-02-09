@@ -61,9 +61,13 @@ THEN I am presented with empty fields to enter a new note title
 Let's get started! Click on the Get Started button on the home page to start adding notes. 
 When you get to the notes page, on the left, you see saved notes along with a delete icon to trash the note when you're done. 
 On the right, you can create a new note with a title and notes within the description. 
-On the top right-hand corner, you can click save to automatically save the new note to the list on the left. 
+On the top right-hand corner, you can click save to automatically save the new note to the list on the left.
 
-## Mock-Up Demo
+## Muck Up
+
+![3](https://user-images.githubusercontent.com/87342751/153287732-ae7800e3-d347-4316-a382-f669932d1820.jpg)
+
+## Demo
 https://watch.screencastify.com/v/Z9bLmP9J7FakEoDaRj5n
 https://watch.screencastify.com/v/Udr52LPH1t2FN4Vk8Cb6
 
